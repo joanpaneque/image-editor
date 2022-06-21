@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.toolbox {
+    width: 75px;
+    height: 100vh;
+    background: #111;
+    position: absolute;
+    color: white;
+    z-index: 5;
+}
+.canvas-container {
+    height: 100vh;
+    background: #333;
+    z-index: 0;
+}
+
+.aside-container {
+    width: 400px;
+    height: 100vh;
+    background: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.toolbox li {
+    padding: 15px;
+}
+
+#canvas {
+    background: white;
+    position: absolute;
+}
+
+li:hover {
+    cursor: pointer;
+    background: #333;
+}
+
+li {
+    border-radius: 20px;
+    margin: 5px;
+}

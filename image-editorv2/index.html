@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image editor v2</title>
+    <script src="js/main.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU -->
+    <nav id="menu" class="menu"></nav>
+
+    <div class="main">
+        <div class="toolbox"></div>
+        <div id="canvas-container" class="canvas-container">
+        </div>
+        <div class="aside"></div>
+    </div>
+
+
+    <!-- POPUPS -->
+
+    <div class="popup" id="popup_newFile" style="display: none;">
+        <header>
+            <div class="title">New file</div>
+            <div class="close" onclick="document.getElementById('popup_newFile').style.display = 'none'">×</div>
+        </header>
+        <section>
+            <form>
+                <div class="input">
+                    <label>Name:</label>
+                    <input id="input_newFile_name" type="text" value="New project">
+                </div>
+                <div class="input">
+                    <label>Width:</label>
+                    <input id="input_newFile_width" type="text" value="1280">
+                    <select>
+                        <option value="0">Pixels</option>
+                        <option value="1">Milimeters</option>
+                        <option value="2">Centimeters</option>
+                        <option value="3">Inches</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label>Height:</label>
+                    <input id="input_newFile_height" type="text" value="720">
+                </div>
+                <div class="input">
+                    <input type="button" value="Create" class="button" id="button_newFile_create">
+                </div>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

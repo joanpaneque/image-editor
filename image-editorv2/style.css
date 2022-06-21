@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: "Open Sans", Sans-Serif;
+}
+
+body {
+    background: black;
+}
+
+.popup {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    min-width: 300px;
+}
+
+.popup header {
+    color: white;
+    padding: 5px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #444;
+}
+
+
+
+.popup header .title {
+    display: inline-block;
+}
+
+.popup input.button {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 5px 10px;
+    background: #666;
+    border: none;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 1px -1px #000000; 
+    box-shadow: 1px 1px 1px -1px #000000;
+}
+
+.popup input.button:hover {
+    background: #777; 
+}
+
+.popup header .close {
+    float: right;
+    line-height: 20px;
+    font-size: 30px;
+}
+
+.popup header .close:hover {
+    cursor: pointer;
+}
+
+.popup section {
+    background: #555;
+    padding: 15px;
+}
+
+.popup section input, .popup section select {
+    user-select: text;
+    color: white;
+    padding: 5px 10px;
+    background: #222;
+    width: 125px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 7px;
+}
+
+.popup section label {
+    margin-right: 15px;
+    color: white;
+}
+
+form .input {
+    display: flex;
+    padding: 5px 0;
+}
+
+
+ul {
+    /*margin-bottom: 1.5em;*/
+    margin-left: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    list-style: none;
+    margin-left: 0;
+}
+
+.nav>li,
+.nav>li>a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.stacked>li {
+    display: list-item;
+}
+
+.stacked>li>a {
+    display: block;
+}
+
+.flyout,
+.flyout-alt {
+    position: relative;
+}
+
+.flyout-content {
+    position: absolute;
+    top: 100%;
+    left: -99999px;
+    height: 0;
+    overflow: hidden;
+}
+
+
+.flyout:hover>.flyout-content {
+    left: 0;
+}
+
+.flyout-alt:hover>.flyout-content {
+    top: 0;
+    left: 100%;
+}
+
+.flyout:hover>.flyout-content,
+.flyout-alt:hover>.flyout-content {
+    height: auto;
+    overflow: visible;
+}
+
+.site-nav {
+    font-size: 0.75em;
+    font-family: sans-serif;
+}
+
+.site-nav a {
+    line-height: 1;
+    padding: 10px 35px 10px 5px;
+
+    background-color: #fff;
+    color: black;
+    white-space: nowrap;
+}
+
+.site-nav a:hover {
+    background: #bee6ff;
+}
+
+.site-nav a.rounded {
+    background-color: #555;
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+.site-nav .flyout-alt>a:after {
+    content: " >";
+}
+
+a.rounded {
+    border-radius: 7px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+a.rounded:first-child {
+    margin-left: 2px;
+}
+
+a.rounded:hover {
+    background: #333;
+}
+
+.flyout-alt a {
+    border-radius: 0;
+}
+
+.site-nav>li>a {
+    border-left-width: 1px;
+}
+
+.site-nav>li:first-child>a {
+    border: none;
+}
+
+.site-nav .flyout-content {
+    border-width: 1px 0 0 1px;
+}
+
+.site-nav .flyout-content a {
+    border-bottom-width: 1px;
+}
+
+.site-nav .flyout-alt:hover>.flyout-content {
+    top: -1px;
+}
+
+.menu {
+    width: 100%;
+    background: #555;
+    position: fixed;
+    z-index: 99;
+}
+
+.main {
+    background: yellow;
+    height: calc(100vh);
+    overflow: hidden;
+}
+
+canvas {
+    background: white;
+}
+
+.toolbox {
+    background: red;
+    width: 100px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+}
+
+.aside {
+    background: pink;
+    width: 100px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.canvas-container {
+    background: #222;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.canvas {
+    position: absolute;
+}
